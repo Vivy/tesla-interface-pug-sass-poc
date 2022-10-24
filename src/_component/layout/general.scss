@@ -21,3 +21,20 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: $color-serif;
 }
+
+  .content {
+  }
+
+%box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  &__small {
+    gap: 16px;
+
+    @extend %box;
+  }
+}
