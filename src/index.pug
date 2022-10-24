@@ -9,4 +9,7 @@ block awesome-content
   - var { sectionList } = data.site
 
   each section, key  in sectionList 
-    +superBg(section, sectionList[key < sectionList.lenght -1 ? key +1 : 0].id)
+    +superBg(
+      section, 
+      sectionList[key < sectionList.length -1 ? key +1 : 0].id
+    )
