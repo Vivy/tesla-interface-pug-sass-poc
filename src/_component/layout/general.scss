@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: $color-serif;
+  background-color: $color-shark;
 }
 
   .content {
@@ -34,6 +34,11 @@ body {
 .box {
   &__small {
     gap: 16px;
+
+    @extend %box;
+  }
+  &__large {
+    gap: 48px;
 
     @extend %box;
   }

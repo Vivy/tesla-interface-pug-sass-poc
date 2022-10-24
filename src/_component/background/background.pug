@@ -24,7 +24,7 @@ mixin superBg(section, goTo)
       .box__small 
         each button, key in buttonList 
           button(
-            class=`button--${key ? 'light' : 'dark'}`
+            class=`button--${ key ? 'light' : 'dark'}`
           )= button 
       a.button__icon--down(
         href=`#${goTo}`
